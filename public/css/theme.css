@@ -1,0 +1,308 @@
+main {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Roboto";
+  font-size: 12px;
+}
+
+.burger-menu {
+  background-color: #1259c3;
+  color: white;
+  border-radius: 5px;
+  width: 35px;
+  font-size: 24px;
+  padding: 5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price {
+  font-size: 18px;
+  flex-grow: 0.3;
+}
+
+.discount {
+  font-size: 16px;
+  color: green;
+  flex-grow: 0.7;
+}
+
+.color-main {
+  color: #666;
+}
+
+.bg-yellow {
+  background-color: #eac926;
+}
+
+.bg-green {
+  background-color: #39b54a;
+}
+
+.bg-blue {
+  background-color: #03264c;
+}
+
+.bg-light-blue {
+  background-color: #1259c3;
+}
+
+.bg-light-gray {
+  background-color: #ebebeb;
+}
+
+.text-center {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.width-logo {
+  width: 25%;
+}
+
+article {
+  margin-bottom: 10px;
+}
+
+article img {
+  width: 100%;
+}
+
+.description-box {
+  border-top: solid 1px #ebebeb;
+  padding: 15px;
+  position: relative;
+}
+
+.box-title-price {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.delivery-icon {
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #39b54a;
+  border-radius: 50%;
+  color: #39b54a;
+  width: 20px;
+
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+#icon {
+  font-size: 2em;
+  color: #1259c3;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#title-footer {
+  font-size: 1.2em;
+  text-decoration: bold;
+}
+
+#margin-footer {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#margin-header {
+  margin-left: 0px;
+}
+
+.padding-8 {
+  padding-bottom: 20px;
+}
+
+.product-card {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  margin-bottom: 16px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.description {
+  font-size: 24px;
+}
+
+.margin-y-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.margin-y-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.margin-x-20 {
+  padding-left: 20px;
+}
+
+.main-form {
+  font-size: 18px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.input {
+  width: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.input-search {
+  position: absolute;
+  margin-right: 50px;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.icon-search {
+  position: absolute;
+  border: none;
+  border-radius: 5px;
+  background: white;
+}
+
+.userProfile {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.userInteresting {
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.checkbox-list {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-style: oblique;
+}
+
+.radio-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bg-main {
+  background-color: #ebebeb;
+  width: 100%;
+}
+
+.button-primary {
+  background-color: #1259c3;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-secondary {
+  background-color: rgb(100, 100, 100);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.top-header {
+  display: absolute;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+/* Tablet + */
+@media (min-width: 480px) {
+  .product-card {
+    width: calc(50% - 16px);
+  }
+
+  .menu-order {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/* Laptop + */
+@media (min-width: 768px) {
+  .product-card {
+    box-shadow: none;
+    width: calc(25% - 16px);
+  }
+
+  .product-card .description {
+    display: none;
+  }
+
+  .article-container {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .inline-header {
+    display: flex;
+  }
+
+  .product-card:hover .description {
+    display: block;
+  }
+
+  .product-card:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .delivery-icon:hover {
+    transform: rotate(-90deg);
+    transition: transform 2s;
+  }
+
+  .button-primary:hover {
+    background-color: #0022aa;
+    transition-property: background-color;
+    transition-duration: 1s;
+  }
+
+  .footer-x {
+    display: flex;
+  }
+
+  #icon:hover {
+    color: gray;
+  }
+
+  .menu-order {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
