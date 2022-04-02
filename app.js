@@ -4,7 +4,7 @@ const path = require("path");
 //Mi servidor
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 //Se definen vincular carpeta completa de CSS e imagenes etc.
 app.use(express.static(path.join(__dirname, "public")));
