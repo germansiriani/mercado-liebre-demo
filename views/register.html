@@ -25,51 +25,52 @@
 
 
 <header class="bg-yellow padding-8">
-  <div class="inline-header">
-  <h1 id="margin-header" class="width-logo">
+<section class="top-header">
+  <h1 class="width-50">
   <a href="/">
   <img src="/images/logo-mercado-liebre.svg" />
   </a>
   </h1>
 
-  <form id="margin-header">
-    <input type="text" placeholder="Buscar productos, marcas" size=30 />
-    <button><i class="fas fa-search"></i></button>
+  <form>
+    <input id="search" type="text" placeholder="Buscar productos, marcas" name="search">
+    <button type="submit"><i class="fas fa-search" id="search-btn"></i></button>
   </form>
 
-  <div>
-    <p class="text-center">
-    <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de
-    crédito
+    <p class="text-center margin-y-16">
+    <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito
     </p>
-  </div>
-  </div>
+</section>
 
-  <section>
-    <ul>
-      <li><a href="/ofertas">Ofertas</a></li>
-      <li><a href="/tiendas">Tiendas Oficiales </a></li>
-      <li><a href="/vender">Vender </a></li>
-      <li><a href="/ayudar">Ayuda </a></li>
-      <br />
-      <li>
+  <nav class="nav">
+    <ul class="nav-left">
+      <li class="li"><a href="/ofertas">Ofertas</a></li>
+      <li class="li"><a href="/tiendas">Tiendas Oficiales </a></li>
+      <li class="li"><a href="/vender">Vender </a></li>
+      <li class="li"><a href="/ayuda">Ayuda </a></li>
+    </ul>
+
+    <ul class="nav-right">
+      <li class="li">
         <a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a>
       </li>
-      <li>
+      <li class="li">
         <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
       </li>
-      <li>
+      <li class="li">
         <a href="/miscompras">Mis compras <i class="fas fa-shopping-basket"></i></a>
       </li>
     </ul>
-  <div class="burger-menu">
+  </section>
+  </nav>
+
+    <div class="burger-menu">
     <p class="text-center">
       <i class="fas fa-bars"></i>
     </p>
     </div>
-  </div>
-  </section>
 </header>
+
 
 
 
@@ -88,8 +89,8 @@
   <input class="input" type="email" id="email" name="email" placeholder="Email" required>
 </label>
 
-<label class="" for="date">Fecha de nacimiento
-  <input class="input" type="date" required>
+<label class="" for="date"><p>Fecha de nacimiento</p>
+  <input id="birthdate" class="input" type="date" name="birthdate" required>
 </label>
 
 <label class="" for="address">

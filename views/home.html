@@ -26,49 +26,44 @@
 
 
 <header class="bg-yellow padding-8">
-
-  <div class="top-header">
-  <h1 id="margin-header" class="width-logo">
+<section class="top-header">
+  <h1 class="width-50">
   <a href="/">
   <img src="/images/logo-mercado-liebre.svg" />
   </a>
   </h1>
 
   <form>
-    <input class="input-search" type="text" placeholder="Buscar productos, marcas" name="search">
-    <button><i class="fas fa-search icon-search"></i></button></input>
+    <input id="search" type="text" placeholder="Buscar productos, marcas" name="search">
+    <button type="submit"><i class="fas fa-search" id="search-btn"></i></button>
   </form>
-  </div>
 
-  <div>
     <p class="text-center margin-y-16">
-    <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de
-    crédito
+    <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito
     </p>
-  </div>
+</section>
 
+  <nav class="nav">
+    <ul class="nav-left">
+      <li class="li"><a href="/ofertas">Ofertas</a></li>
+      <li class="li"><a href="/tiendas">Tiendas Oficiales </a></li>
+      <li class="li"><a href="/vender">Vender </a></li>
+      <li class="li"><a href="/ayuda">Ayuda </a></li>
+    </ul>
 
-  <section>
-    <ul class="menu-order">
-      <li><a href="/ofertas">Ofertas</a></li>
-      <li><a href="/tiendas">Tiendas Oficiales </a></li>
-      <li><a href="/vender">Vender </a></li>
-      <li><a href="/ayudar">Ayuda </a></li>
-
-      <li></li>
-
-      <li>
+    <ul class="nav-right">
+      <li class="li">
         <a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a>
       </li>
-      <li>
+      <li class="li">
         <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
       </li>
-      <li>
+      <li class="li">
         <a href="/miscompras">Mis compras <i class="fas fa-shopping-basket"></i></a>
       </li>
     </ul>
-  </div>
   </section>
+  </nav>
 
     <div class="burger-menu">
     <p class="text-center">
@@ -84,7 +79,7 @@
 
 
 <main>
-  <h2>Sección: Basado en tu última visita</h2>
+  <h2 class="margin-y-16">Sección: Basado en tu última visita</h2>
   <section class="article-container">
     <article class="product-card">
       <img src="/images/img-cafetera-moulinex.jpg" width="100%" />
